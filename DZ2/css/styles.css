@@ -1,0 +1,17 @@
+* {
+    margin: 5px;
+}
+
+ul {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+td {
+    padding: 0px 1px 0px 5px;
+}
