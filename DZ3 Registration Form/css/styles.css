@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    width: 420px;
+    height: 426px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+    border-radius: 20px;
+}
+
+div-icon {
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+img {
+    height: 14px;
+    width: 14px;
+    border-radius: 0px;
+    margin-left: 385px;
+    margin-top: 21px;
+    margin-right: 21px;
+}
+
+.container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 16px 16px;
+}
+
+.head-text {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 5px;
+    color: #000000;
+}
+
+.label-input-mail>input {
+    padding: 7px 16px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    width: 356px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #FFAA0D;
+    border-radius: 12px;
+    caret-color: #FFAA0D;
+}
+
+.label-input-pass>input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 16px;
+    width: 356px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+    caret-color: #FFAA0D;
+}
+
+.paragraph {
+    width: 356px;
+    height: 42px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 24px;
+    color: #7B8E98;
+}
+
+.registration {
+    height: 48px;
+    width: 356px;
+    left: 0px;
+    top: 0px;
+    border-radius: 55px;
+    border: 1px;
+    padding: 14px 24px 14px 24px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    background: #FFE44D;
+}
+
+.enter {
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    background-color: white;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 32px;
+    width: 356px;
+    height: 48px;
+    border: 1px solid #CFD8DC;
+    border-radius: 87px
+}
