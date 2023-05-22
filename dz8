@@ -1,0 +1,102 @@
+// Написать цикл, который создает множество параграфов с каждым десятым числом в промежутке от 100 до 50 (т.е. 100, 90, 80, 70, 60, 50). Добавить созданные параграфы в div с классом numbers.
+
+const divElem = document.querySelector(".numbers")
+for (let i = 100; i >= 50; i -= 10) {
+    const pElem = document.createElement("p")
+    pElem.innerText = i
+    divElem.append(pElem)
+}
+
+
+
+
+function createNumbers() {
+    const container = document.querySelector('.numbers')
+    
+    for (let i = 100; i >= 50; i -= 10) {
+        const p = document.createElement('p')
+        p.innerText = i
+        container.append(p)
+    }
+    return container
+}
+
+// Написать цикл, который проходится по массиву строк, для каждой строки создает параграф и добавляет его в div с классом strings_container. Строки взять произвольные.
+
+const stringArr = ["Lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipisicing", "elit"]
+const divContainer = document.querySelector(".strings_container")
+for (let i = 0; i < stringArr.length; i++) {
+    const pElem = document.createElement("p")
+    pElem.innerText = stringArr[i]
+    divContainer.append(pElem)
+}
+
+
+
+function createPar(strings) {
+    const container = document.querySelector('.strings_container')
+    
+    for (let e of strings) {
+        const p = document.createElement('p')
+        p.innerText = e
+        container.append(p)
+    }
+    return container
+}
+
+// Написать цикл, который проходится по массиву с объектами - у объектов свойства first_name, last_name и  age (данные взять произвольные) - и создает карточки только для совершеннолетних пользователей. Карточка должна содержать информацию об имени, фамилии и возрасте пользователя. Добавить все карточки в div с классом users_container.
+
+function createUsers(users) {
+    const container = document.querySelector('.users-container')
+    
+    for (let user of users) {
+      if (user.age < 18) continue;
+      
+      const p = document.createElement('p')
+      p.innerText = `User:\n${user.name}\n${user.surname}\nAge: ${user.age}`
+      container.append(p)
+    }
+    return container
+}
+
+
+
+
+function createUserCard(user) {
+    const p = document.createElement("p");
+    p.innerText = `User:
+    Name: ${user.name}
+    Surname: ${user.surname}
+    Age: ${user.age}`;
+    return p;
+  }
+  
+  function createUsers(users) {
+    const container = document.querySelector(".users-container");
+  
+    for (let user of users) {
+      if (user.age < 18) continue;
+  
+      container.append(createUserCard(user));
+    }
+    return container;
+  }
+  
+  createUsers([
+    {
+      name: "Mark",
+      surname: "Chigrin",
+      age: 23
+    },
+    {
+      name: "Mark",
+      surname: "Chigrin",
+      age: 52
+    },
+    {
+      name: "Mark",
+      surname: "Chigrin",
+      age: 17
+    }
+  ]);
+  
