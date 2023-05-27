@@ -1,0 +1,113 @@
+/* task 1 */
+.btn {
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sqr {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: background-color 0.3s, width 0.3s, height 0.3s;
+  }
+
+  .sqr.click {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+  }
+
+  /* 2 */
+  .btn2 {
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sqr2 {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    transition: background-color 0.3s, width 0.3s, height 0.3s;
+  }
+
+  .sqr.click2 {
+    background-color: blue;
+  }
+
+  /* 3 - Создать кнопку и квадрат с размерами 150х150px. При клике на кнопку увеличивать высоту и ширину квадрата на 20px.   */
+
+  #square3 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: width 0.3s, height 0.3s; /* Анимация при изменении размеров */
+  }
+
+  #btn3 {
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* task 4 - Создать кнопку и div с классом root. При клике на кнопку в div создается параграф синего цвета. Текст параграфа произвольный.
+ */
+  .root {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .blue-paragraph {
+    color: blue;
+  }
+
+  #btn4 {
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* task 5 - Создать кнопку и div с классом root. При клике на кнопку в div создаются по очереди параграфы синего и зеленого цветов. Первый цвет синий. */
+  .root2 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .blue-paragraph {
+    color: blue;
+  }
+  .green-paragraph {
+    color: green;
+  }
+
+  #btn5 {
+    padding: 10px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
